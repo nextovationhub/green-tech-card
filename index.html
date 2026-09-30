@@ -43,16 +43,17 @@
 
   html { scroll-padding-top: env(safe-area-inset-top, 0px); }
   * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
+  html, body { min-height: 100%; margin: 0; }
 
   body {
     background: var(--bg);
     color: var(--text-main);
     font-family: 'Manrope', system-ui, sans-serif;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: clamp(20px, 6vw, 56px) 16px calc(env(safe-area-inset-bottom, 0px) + 40px);
+    align-items: center;
+    padding: clamp(28px, 6vw, 60px) 16px calc(clamp(28px, 6vw, 60px) + env(safe-area-inset-bottom, 0px));
     position: relative;
     overflow-x: hidden;
     transition: background .4s ease, color .4s ease;
@@ -490,12 +491,34 @@
     border-top: 1px solid var(--line);
   }
 
+  .external-credit {
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--text-soft);
+    letter-spacing: 0.04em;
+    margin-top: 14px;
+    margin-bottom: 0;
+    opacity: 0;
+    animation: rise-in .6s ease 1.8s forwards;
+  }
+  .external-credit a {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+  .external-credit a:hover {
+    color: var(--hover);
+    text-shadow: 0 0 10px rgba(104, 189, 69, 0.5);
+    text-decoration: none;
+  }
+
   .card { transition: border-color .35s ease, box-shadow .35s ease; }
   .card:hover { border-color: var(--hover); box-shadow: 0 35px 85px -15px rgba(var(--shadow-color), 0.5); }
 
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
-    .emblem, .org-name, .sub-name, .divider, .contact-item, .profile-card, .address-block, .social-label, .social-icon, footer { opacity: 1 !important; transform: none !important; }
+    .emblem, .org-name, .sub-name, .divider, .contact-item, .profile-card, .address-block, .social-label, .social-icon, footer, .external-credit { opacity: 1 !important; transform: none !important; }
     .leaf-drift, .sky-bird, .firefly, .cinematic-landscape, .sunlight-rays { animation: none !important; opacity: .6 !important; }
   }
 </style>
@@ -633,6 +656,10 @@
 
     <footer>Green Tech &middot; Naturally Connected &middot; Karachi</footer>
 
+  </div>
+
+  <div class="external-credit">
+    Design by <a href="https://nextovationhub.com/" target="_blank" rel="noopener">Nextovation Hub</a>
   </div>
 </div>
 </body>
