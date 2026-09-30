@@ -8,16 +8,16 @@
       .cls-3 { fill: url(#linear-gradient); }
       .cls-4 { fill: #59a445; }
       .cls-4, .cls-7, .cls-8, .cls-9, .cls-10, .cls-13, .cls-14 { fill-rule: evenodd; }
-      .cls-5, .cls-8 { fill: #010101; }
+      .cls-5, .cls-8 { fill: #ffffff; }
       .cls-18 { isolation: isolate; }
-      .cls-7 { fill: #181818; }
-      .cls-9 { fill: #1e1e1e; }
-      .cls-10 { fill: #141414; }
-      .cls-11 { fill: #fff; }
-      .cls-12, .cls-13 { fill: #231f20; }
+      .cls-7 { fill: #ffffff; }
+      .cls-9 { fill: #ffffff; }
+      .cls-10 { fill: #ffffff; }
+      .cls-11 { fill: #0C1A0C; }
+      .cls-12, .cls-13 { fill: #ffffff; }
       .cls-14 { fill: #6cbe46; }
       .cls-15 { fill: #86c65d; }
-      .cls-17 { stroke: #010101; stroke-miterlimit: 2.61; stroke-width: .22px; }
+      .cls-17 { stroke: #ffffff; stroke-miterlimit: 2.61; stroke-width: .22px; }
     </style>
     <linearGradient id="linear-gradient" x1="31.42" y1="65.63" x2="58.69" y2="65.63" gradientTransform="translate(0 80.68) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#519a44"/>
